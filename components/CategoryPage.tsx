@@ -112,7 +112,7 @@ export default function CategoryPage({
         <span className="font-semibold text-foreground">{title}</span>
       </div>
 
-      <section className="rounded-[2rem] border border-border/70 bg-white px-6 py-8 shadow-sm shadow-black/5 sm:px-10">
+      <section className="rounded-[2rem] border border-border/70 bg-card px-6 py-8 shadow-sm shadow-black/5 sm:px-10">
         <div className="grid gap-8 lg:grid-cols-[auto_1fr] lg:items-center">
           <div className="flex h-24 w-24 items-center justify-center rounded-3xl text-4xl" style={{ backgroundColor: color }}>
             {categoryIcons[category] ?? "⭐"}
@@ -188,7 +188,7 @@ export default function CategoryPage({
       </section>
 
       {category === "video-ai" && (
-        <section className="space-y-6 rounded-[2rem] border border-border/70 bg-white px-6 py-8 shadow-sm shadow-black/5 sm:px-10">
+        <section className="space-y-6 rounded-[2rem] border border-border/70 bg-card px-6 py-8 shadow-sm shadow-black/5 sm:px-10">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary">Quy trình làm video</p>
             <h2 className="mt-3 text-3xl font-semibold text-foreground">Từ ý tưởng đến xuất bản</h2>
@@ -247,7 +247,7 @@ export default function CategoryPage({
       )}
 
       {category === "anh-ai" && (
-        <section className="space-y-6 rounded-[2rem] border border-border/70 bg-white px-6 py-8 shadow-sm shadow-black/5 sm:px-10">
+        <section className="space-y-6 rounded-[2rem] border border-border/70 bg-card px-6 py-8 shadow-sm shadow-black/5 sm:px-10">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary">Before / After</p>
             <h2 className="mt-3 text-3xl font-semibold text-foreground">So sánh chỉnh sửa ảnh AI</h2>
@@ -317,7 +317,7 @@ export default function CategoryPage({
         </div>
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {guides.map((guide) => (
-            <article key={guide.id} className="overflow-hidden rounded-3xl border border-border/70 bg-white shadow-sm shadow-black/5">
+            <article key={guide.id} className="overflow-hidden rounded-3xl border border-border/70 bg-card shadow-sm shadow-black/5">
               <div className="h-48 bg-muted" />
               <div className="space-y-3 p-6">
                 <h3 className="text-xl font-semibold text-foreground">{guide.title}</h3>
@@ -336,7 +336,7 @@ export default function CategoryPage({
         </div>
         <div className="grid gap-4 md:grid-cols-2">
           {prompts.map((prompt) => (
-            <div key={prompt.id} className="rounded-3xl border border-border/70 bg-white p-6 shadow-sm shadow-black/5">
+            <div key={prompt.id} className="rounded-3xl border border-border/70 bg-card p-6 shadow-sm shadow-black/5">
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <p className="text-sm font-semibold text-foreground">{prompt.title}</p>
@@ -358,7 +358,7 @@ export default function CategoryPage({
         </div>
       </section>
 
-      <section className="space-y-6 rounded-[2rem] border border-border/70 bg-white px-6 py-8 shadow-sm shadow-black/5 sm:px-10">
+      <section className="space-y-6 rounded-[2rem] border border-border/70 bg-card px-6 py-8 shadow-sm shadow-black/5 sm:px-10">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary">Thường dùng cùng nhau</p>
           <h2 className="mt-3 text-3xl font-semibold text-foreground">Các công cụ liên quan</h2>
@@ -368,7 +368,7 @@ export default function CategoryPage({
             <Link
               key={tool.id}
               href={`/cong-cu/${tool.id}`}
-              className="rounded-3xl border border-border/70 bg-muted px-5 py-6 text-left transition hover:border-primary/80 hover:bg-white"
+              className="rounded-3xl border border-border/70 bg-muted px-5 py-6 text-left transition hover:border-primary/80 hover:bg-card"
             >
               <p className="text-sm font-semibold text-primary">{tool.name}</p>
               <p className="mt-3 text-sm leading-6 text-foreground/70">{tool.shortDesc}</p>

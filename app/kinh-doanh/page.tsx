@@ -3,9 +3,9 @@ import ToolList from "@/components/ToolList";
 import { tools } from "@/data/tools";
 
 export const metadata: Metadata = {
-  title: "Kinh doanh | AI Cho Tôi",
+  title: "Kinh doanh | AI_tutorial",
   description: "AI hỗ trợ viết nội dung, marketing và phát triển doanh nghiệp hiệu quả.",
-  openGraph: { title: "Kinh doanh | AI Cho Tôi", description: "AI hỗ trợ viết nội dung, marketing và phát triển doanh nghiệp hiệu quả.", images: ["/og-image.svg"] },
+  openGraph: { title: "Kinh doanh | AI_tutorial", description: "AI hỗ trợ viết nội dung, marketing và phát triển doanh nghiệp hiệu quả.", images: ["/og-image.svg"] },
   alternates: { canonical: "https://aichotoi.vn/kinh-doanh" },
 };
 

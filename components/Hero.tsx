@@ -33,37 +33,47 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="rounded-[2rem] border border-border/70 bg-white px-6 py-10 shadow-xl shadow-black/5 sm:px-10">
-      <div className="max-w-4xl">
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-primary">
-          AI Cho Tôi
+    <section className="relative overflow-hidden rounded-[2rem] border border-border/70 bg-card/95 px-6 py-10 shadow-[0_30px_60px_-40px_rgba(15,23,42,0.75)] sm:px-10">
+      <div className="absolute right-10 top-6 h-24 w-24 rounded-full bg-primary/10 blur-3xl" />
+      <div className="absolute left-6 bottom-10 h-28 w-28 rounded-full bg-accent/10 blur-3xl" />
+      <div className="relative max-w-4xl">
+        <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.24em] text-primary">
+          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground">✨</span>
+          AI_tutorial dành cho mọi lứa tuổi
         </p>
-        <h1 className="text-[32px] font-semibold leading-tight tracking-tight text-foreground sm:text-[48px]">
-          Dùng AI tăng năng suất gấp 3 lần — không cần biết lập trình
+        <h1 className="text-[34px] font-semibold leading-tight tracking-tight text-foreground sm:text-[52px]">
+          AI thông minh, chuyên nghiệp và thân thiện với trẻ nhỏ
         </h1>
         <p className="mt-5 max-w-3xl text-[18px] leading-8 text-foreground/70">
-          Dành cho học sinh, chủ shop, lập trình viên và người làm nội dung muốn tiết kiệm thời gian bằng AI.
+          Hướng dẫn prompt chuẩn, chọn công cụ đúng, tiết kiệm thời gian và giữ an toàn khi sử dụng AI cho học tập và sáng tạo.
         </p>
 
-        <div className="mt-8 rounded-3xl border border-border/70 bg-muted px-5 py-4 text-[18px] font-medium text-foreground/85 transition">
-          <span className="inline-block h-5 w-5 animate-pulse rounded-full bg-primary"></span>
-          <span className={`ml-3 inline-block transition-opacity duration-300 ${visible ? "opacity-100" : "opacity-0"}`}>
-            {useCases[currentIndex]}
-          </span>
+        <div className="mt-8 grid gap-3 sm:grid-cols-3">
+          {[
+            { label: "Dễ hiểu", icon: "🧠", description: "Hướng dẫn prompt rõ ràng cho mọi trình độ." },
+            { label: "An toàn cho trẻ em", icon: "👧👦", description: "Chọn lọc nội dung phù hợp học sinh." },
+            { label: "Chuyên nghiệp", icon: "🌟", description: "Ứng dụng thực tế cho học tập và kinh doanh." },
+          ].map((item) => (
+            <div key={item.label} className="rounded-3xl border border-border/70 bg-muted p-4 text-sm text-foreground/85 transition hover:border-primary hover:bg-primary/5">
+              <p className="text-xl">{item.icon}</p>
+              <p className="mt-3 font-semibold text-foreground">{item.label}</p>
+              <p className="mt-2 text-xs leading-5 text-foreground/70">{item.description}</p>
+            </div>
+          ))}
         </div>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
+            className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90 shadow-lg shadow-primary/10"
           >
-            Chọn lộ trình của tôi
+            Bắt đầu khám phá
           </button>
           <Link
             href="/prompt-mau"
             className="inline-flex items-center justify-center rounded-full border border-border/80 bg-background px-6 py-3 text-sm font-semibold text-foreground transition hover:border-primary hover:text-primary"
           >
-            Xem công cụ miễn phí
+            Xem prompt mẫu
           </Link>
         </div>
 

@@ -3,10 +3,10 @@ import ToolList from "@/components/ToolList";
 import { tools } from "@/data/tools";
 
 export const metadata: Metadata = {
-  title: "IT & Dev | AI Cho Tôi",
+  title: "IT & Dev | AI_tutorial",
   description: "Công cụ AI dành cho lập trình viên, tự động hóa và phát triển sản phẩm.",
   openGraph: {
-    title: "IT & Dev | AI Cho Tôi",
+    title: "IT & Dev | AI_tutorial",
     description: "Công cụ AI dành cho lập trình viên, tự động hóa và phát triển sản phẩm.",
     images: ["/og-image.svg"],
   },

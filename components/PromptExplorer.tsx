@@ -102,7 +102,7 @@ export default function PromptExplorer() {
 
   return (
     <section className="space-y-8">
-      <div className="rounded-[2rem] border border-border/70 bg-white p-6 shadow-sm shadow-black/5">
+      <div className="rounded-[2rem] border border-border/70 bg-card p-6 shadow-sm shadow-black/5">
         <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
           <div className="space-y-4">
             <label htmlFor="prompt-search" className="text-sm font-semibold text-foreground/70">
@@ -162,7 +162,7 @@ export default function PromptExplorer() {
 
       <div className="grid gap-6 xl:grid-cols-[1.4fr_0.6fr]">
         <div className="space-y-6">
-          <div className="rounded-[2rem] border border-border/70 bg-white p-6 shadow-sm shadow-black/5">
+          <div className="rounded-[2rem] border border-border/70 bg-card p-6 shadow-sm shadow-black/5">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p className="text-sm uppercase tracking-[0.24em] text-primary">Featured</p>
@@ -177,7 +177,7 @@ export default function PromptExplorer() {
                     <span className={`rounded-full px-2 py-1 ${categoryLabels[prompt.category]?.color ?? "bg-slate-200 text-slate-900"}`}>
                       {categoryLabels[prompt.category]?.label ?? prompt.category}
                     </span>
-                    <span className="rounded-full bg-white px-2 py-1 text-foreground/70">{prompt.difficulty}</span>
+                    <span className="rounded-full bg-card px-2 py-1 text-foreground/70">{prompt.difficulty}</span>
                   </div>
                   <h3 className="mt-4 text-xl font-semibold text-foreground">{prompt.title}</h3>
                   <p className="mt-3 text-sm leading-7 text-foreground/75">{prompt.template}</p>
@@ -185,7 +185,7 @@ export default function PromptExplorer() {
                     <button
                       type="button"
                       onClick={() => handleCopy(prompt.template)}
-                      className="rounded-full border border-border/70 bg-white px-4 py-2 text-sm font-semibold text-foreground transition hover:border-primary"
+                      className="rounded-full border border-border/70 bg-card px-4 py-2 text-sm font-semibold text-foreground transition hover:border-primary"
                     >
                       {copiedPrompt === prompt.template ? "Đã copy!" : "COPY"}
                     </button>
@@ -205,7 +205,7 @@ export default function PromptExplorer() {
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {filteredPrompts.map((prompt) => (
-              <article key={prompt.id} className="rounded-[2rem] border border-border/70 bg-white p-6 shadow-sm shadow-black/5">
+              <article key={prompt.id} className="rounded-[2rem] border border-border/70 bg-card p-6 shadow-sm shadow-black/5">
                 <div className="flex flex-wrap items-center gap-2 text-xs text-foreground/70">
                   <span className={`rounded-full px-2 py-1 ${categoryLabels[prompt.category]?.color ?? "bg-slate-200 text-slate-900"}`}>
                     {categoryLabels[prompt.category]?.label ?? prompt.category}
@@ -245,7 +245,7 @@ export default function PromptExplorer() {
         </div>
 
         <aside className="space-y-6">
-          <div className="rounded-[2rem] border border-border/70 bg-white p-6 shadow-sm shadow-black/5">
+          <div className="rounded-[2rem] border border-border/70 bg-card p-6 shadow-sm shadow-black/5">
             <p className="text-sm uppercase tracking-[0.24em] text-primary">Gửi prompt</p>
             <h2 className="mt-3 text-2xl font-semibold text-foreground">Thêm prompt của bạn</h2>
             <p className="mt-3 text-sm leading-6 text-foreground/70">

@@ -3,9 +3,9 @@ import ToolList from "@/components/ToolList";
 import { tools } from "@/data/tools";
 
 export const metadata: Metadata = {
-  title: "Mạng xã hội | AI Cho Tôi",
+  title: "Mạng xã hội | AI_tutorial",
   description: "Công cụ AI để tạo nội dung mạng xã hội và tối ưu tương tác.",
-  openGraph: { title: "Mạng xã hội | AI Cho Tôi", description: "Công cụ AI để tạo nội dung mạng xã hội và tối ưu tương tác.", images: ["/og-image.svg"] },
+  openGraph: { title: "Mạng xã hội | AI_tutorial", description: "Công cụ AI để tạo nội dung mạng xã hội và tối ưu tương tác.", images: ["/og-image.svg"] },
   alternates: { canonical: "https://aichotoi.vn/mang-xa-hoi" },
 };
 

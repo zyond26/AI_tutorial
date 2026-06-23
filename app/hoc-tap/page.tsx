@@ -3,10 +3,10 @@ import ToolList from "@/components/ToolList";
 import { tools } from "@/data/tools";
 
 export const metadata: Metadata = {
-  title: "Học tập | AI Cho Tôi",
+  title: "Học tập | AI_tutorial",
   description: "Công cụ AI giúp học tập, ôn luyện và tự học bằng tiếng Việt.",
   openGraph: {
-    title: "Học tập | AI Cho Tôi",
+    title: "Học tập | AI_tutorial",
     description: "Công cụ AI giúp học tập, ôn luyện và tự học bằng tiếng Việt.",
     images: ["/og-image.svg"],
   },

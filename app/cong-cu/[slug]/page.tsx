@@ -22,13 +22,13 @@ export function generateMetadata({ params }: PageProps): Metadata {
   const tool = tools.find((item) => item.id === params.slug);
   if (!tool) {
     return {
-      title: "Công cụ không tìm thấy | AI Cho Tôi",
+      title: "Công cụ không tìm thấy | AI_tutorial",
       description: "Không tìm thấy công cụ AI này.",
     };
   }
 
   return {
-    title: `${tool.name} | AI Cho Tôi`,
+    title: `${tool.name} | AI_tutorial`,
     description: tool.shortDesc,
   };
 }

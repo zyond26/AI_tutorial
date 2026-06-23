@@ -3,9 +3,9 @@ import ToolList from "@/components/ToolList";
 import { tools } from "@/data/tools";
 
 export const metadata: Metadata = {
-  title: "Video AI | AI Cho Tôi",
+  title: "Video AI | AI_tutorial",
   description: "Công cụ AI tạo và chỉnh sửa video nhanh chóng cho nội dung digital.",
-  openGraph: { title: "Video AI | AI Cho Tôi", description: "Công cụ AI tạo và chỉnh sửa video nhanh chóng cho nội dung digital.", images: ["/og-image.svg"] },
+  openGraph: { title: "Video AI | AI_tutorial", description: "Công cụ AI tạo và chỉnh sửa video nhanh chóng cho nội dung digital.", images: ["/og-image.svg"] },
   alternates: { canonical: "https://aichotoi.vn/video-ai" },
 };
 
